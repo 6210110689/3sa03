@@ -23,5 +23,6 @@ export default function CharacterCard(props) {
 
     return (
         <div className={className} onClick={activate}>{props.value}</div>
+        
     )
 }

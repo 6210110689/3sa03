@@ -3,12 +3,12 @@ import WordCard from './WordCard';
 import './App.css';
 
 
-const word = ["Hello", "World"];
+
+const words = ["Hello", "World", "apple", "banana"]
 function App() {
   return(
     <div>
-     <WordCard value={word[0]}/>
-     <WordCard value={word[1]}/>
+      {words.map(w =>(<WordCard value={w}/> ))}
     </div>
   )
 }
